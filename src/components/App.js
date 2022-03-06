@@ -40,9 +40,9 @@ class App extends Component {
       icon: data.weather[0].icon,
       city: data.name + ", ",
       loc: data.sys.country ,
-      temp: Math.ceil(data.main.temp - KELVIN) + "°",
+      temp: Math.floor(Math.ceil(data.main.temp - KELVIN)) + "°",
       desc: data.weather[0].main,
-      feels_like: Math.ceil(data.main.feels_like - KELVIN) + "°",
+      feels_like: Math.floor(Math.ceil(data.main.feels_like - KELVIN)) + "°",
       wind: data.wind.speed + " m/s",
       pressure: data.main.pressure + " hPa",
     }))
