@@ -8,7 +8,7 @@ const Weather = props => {
         <section className="weather">
 
             <div className="weather-icon flex">
-                <img src={"./icon/" + icon + ".png"} />
+                <img src={"./icon/" + icon + ".png"} alt="" />
             </div>
 
             <div className="weather-info grid-1">
