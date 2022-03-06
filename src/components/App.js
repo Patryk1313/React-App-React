@@ -12,7 +12,7 @@ class App extends Component {
 
   state = {
     value: '',
-    icon: '',
+    icon: 'unknown',
     city:'',
     loc: '',
     temp: '',
